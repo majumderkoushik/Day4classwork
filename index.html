@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hootsuite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+    <div id="root"></div>
+
+
+    <Script type="text/babel">
+
+        function Component() {
+
+            return (
+
+                <>
+                    <div className="nav">
+                        <div className="n-left">
+                            <div className="img">
+                                <img src="./logo.png" width="120px" height="35px" />
+                            </div>
+                            <div className="n-left-item">
+                                <a className="plan">Platform</a>
+                                <a className="plan">Plans</a>
+                                <a className="plan">Enterprise</a>
+                                <a className="plan">Resources</a>
+                                <a className="plan">Education</a>
+                                </div>
+                                
+                            </div>
+                            <div className="n-right">
+                                <a className="plan">Contact Us</a>
+                                <a className="plan">Log In</a>
+                                <button className="btn">Sign Up</button>
+                                </div>
+                        </div>
+                        <div className="hero">
+                            <div className="social">
+                                <h1>See value from social sooner</h1>
+                                </div>
+                                <div className="training">
+                                    <p>Our training and strategic services have helped<br></br>
+                            thousands of organizations succeed on social</p></div>
+                            <div>
+                                <button className="demo-btn">Request a demo</button></div>
+                            </div>
+                            <div className="footer">
+                                <div class="card">
+                                    <img src="./rocket-icon.png" height="150px" /> 
+                                    
+                                    <h2 className="pr">2500</h2>
+                                    <p className="pr">enterprise organizations successfully launched </p>
+                                </div>
+                                <div class="card">
+                                    <img src="./addressbook-icon.png" height="150px" /> 
+                                    
+                                    <h2 className="pr">4500</h2>
+                                    <p className="pr">Enterprise users onboard seamlessly</p>
+                                </div>
+                                <div class="card">
+                                    <img src="./People-icon.png" height="150px" /> 
+                                    
+                                    <h2 className="pr">200,000+</h2>
+                                    <p className="pr">professionals trained on product and strategy </p>
+                                </div>
+                                </div>
+                                
+                </>
+
+            );
+        }
+
+
+
+        const container = document.getElementById('root');
+        const root = ReactDOM.createRoot(container);
+        root.render(<Component />);
+
+
+
+    </script>
+
+
+</body>
+
+</html>
